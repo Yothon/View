@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yothon.view.widget.TopBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topbar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    custom:leftBackgroundColor="@android:color/holo_blue_bright"
+    custom:leftText="back"
+    custom:leftTextColor="@android:color/black"
+    custom:rightBackgroundColor="@android:color/holo_blue_bright"
+    custom:rightText="more"
+    custom:rightTextColor="@android:color/black"
+    custom:title="标题"
+    custom:titleTextColor="@android:color/holo_blue_bright"
+    custom:titleTextSize="14dp"
+    android:background="@color/colorPrimaryDark"
+    >
+
+</com.yothon.view.widget.TopBar>
