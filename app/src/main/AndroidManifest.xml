@@ -25,6 +25,14 @@
                   android:theme="@style/AppTheme.NoActionBar"
             >
         </activity>
+        <activity android:name=".activity.DrawViewActivity"
+                  android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <activity android:name=".activity.ShapeViewActivity"
+                  android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
 
         <activity android:name=".activity.LoginActivity"
                   android:theme="@style/AppTheme.NoActionBar">

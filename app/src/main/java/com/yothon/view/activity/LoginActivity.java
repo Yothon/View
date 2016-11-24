@@ -51,6 +51,8 @@ public class LoginActivity extends BaseActivity {
         datas = new ArrayList<>();
         datas.add(new Data("View"));
         datas.add(new Data("ViewGroup"));
+        datas.add(new Data("DrawView"));
+        datas.add(new Data("ShapeView"));
         initView();
     }
 
@@ -65,15 +67,26 @@ public class LoginActivity extends BaseActivity {
         adapter.setOnItemClickListener(new LoginRecyclerAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
+                Intent intent = null;
                 switch (position){
                     case 0:
-                        Intent intent = new Intent(LoginActivity.this,ViewActivity.class);
+                        intent = new Intent(LoginActivity.this,ViewActivity.class);
                         startActivity(intent);
                         mHandler.sendEmptyMessage(0);
                         break;
                     case 1:
-                        Intent intent1 = new Intent(LoginActivity.this,ViewGroupActivity.class);
-                        startActivity(intent1);
+                        intent = new Intent(LoginActivity.this,ViewGroupActivity.class);
+                        startActivity(intent);
+                        mHandler.sendEmptyMessage(0);
+                        break;
+                    case 2:
+                        intent = new Intent(LoginActivity.this,DrawViewActivity.class);
+                        startActivity(intent);
+                        mHandler.sendEmptyMessage(0);
+                        break;
+                    case 3:
+                        intent = new Intent(LoginActivity.this,ShapeViewActivity.class);
+                        startActivity(intent);
                         mHandler.sendEmptyMessage(0);
                         break;
                 }

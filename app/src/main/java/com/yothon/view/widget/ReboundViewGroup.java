@@ -5,6 +5,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.Scroller;
 
 import com.yothon.view.utils.ScreenUtils;
@@ -14,7 +15,7 @@ import com.yothon.view.utils.ScreenUtils;
  * on 2016/11/21 14:47
  * 邮箱：wanyouxin@parim.net
  */
-public class ReboundViewGroup extends ViewGroup {
+public class ReboundViewGroup extends LinearLayout {
     private Context context;
     private int mlastY;
     private int mStartY;
@@ -47,9 +48,9 @@ public class ReboundViewGroup extends ViewGroup {
         mlp.height = screenHeight * childCount;
         setLayoutParams(mlp);
         for (int j = 0; j < childCount; j++) {
-            View childAt = getChildAt(i);
+            View childAt = getChildAt(j);
             if (childAt.getVisibility()!=View.GONE){
-                childAt.layout(i,i* screenHeight,i2,(i+1)* screenHeight);
+                childAt.layout(i,j* screenHeight,i2,(j+1)* screenHeight);
             }
         }
     }

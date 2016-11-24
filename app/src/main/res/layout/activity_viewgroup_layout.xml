@@ -7,8 +7,17 @@
 <com.yothon.view.widget.ReboundViewGroup
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/viewgroup"
+    android:orientation="vertical"
     >
-
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/viewgroup"
+    />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/viewgroup"
+        />
 </com.yothon.view.widget.ReboundViewGroup>
 </LinearLayout>
